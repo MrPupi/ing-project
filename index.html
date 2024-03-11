@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ING - Acceso Clientes</title>
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link rel="icon" href="../png/a2025d9c341a20513167370800eea233.ico" />
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="logo-ing"></div>
+      <div class="phone-number">
+        <img src="../png/2024-03-11_23-22-49.png" alt="" />
+        <span id="phone">91 206 66 66</span>
+      </div>
+    </header>
+
+    <div id="main">
+      <div class="regist">
+        <h1>Accede a tu Área Clientes</h1>
+
+        <span>Elige tu documento</span>
+
+        <form action="get">
+          <div id="checkboxes">
+            <input
+              type="radio"
+              id="r1"
+              name="drone"
+              value="val1"
+              class="custom"
+              checked
+            />
+            <label class="inline" for="r1"> DNI o Tarjeta de residencia </label>
+
+            <input
+              type="radio"
+              id="r2"
+              name="drone"
+              value="val2"
+              class="custom"
+              checked
+            />
+            <label class="inline" for="r2"> Pasaporte </label>
+          </div>
+
+          <div id="docs_date">
+            <div id="documents">
+              <label for="documento">Número de documento</label>
+              <input type="text" id="documento" name="docs" />
+            </div>
+
+            <div>
+              <label for="date">Fecha de nacimiento</label>
+              <input type="date" id="date" name="datetime" />
+            </div>
+          </div>
+
+          <div id="onecheck_button">
+            
+            <label for="check" class="checkbox">
+              <input type="checkbox" id="check" name="checked" checked />
+              <span>Recordar</span>
+            </label>
+
+            <div id="butt-or">
+              <button class="button-orange">Entrar</button>
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <footer></footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
