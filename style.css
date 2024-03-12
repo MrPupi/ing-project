@@ -1,0 +1,260 @@
+@charset "UTF-8";
+body {
+  min-height: 100vh;
+  font-family: "INGMe", arial, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  background: url(../png/fcc1889b9ff054ccc3edbca148a17426.svg) #f0f0f0 no-repeat fixed bottom right;
+}
+
+#phone {
+  position: relative;
+  bottom: 0.9em;
+}
+
+.phone-number {
+  align-items: center;
+  justify-content: center;
+  margin: 0 100px;
+  padding: 5px;
+  position: sticky;
+}
+
+.custom {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента input c type="radio" */
+.custom {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid orange;
+  /* изменено на оранжевый цвет */
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на радио */
+.custom:not(:disabled):not(:checked) + label:hover::before {
+  border-color: darkorange;
+  /* изменено на оранжевый цвет */
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom:not(:disabled):active + label::before {
+  background-color: darkorange;
+  /* изменено на оранжевый цвет */
+  border-color: darkorange;
+  /* изменено на оранжевый цвет */
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.custom:focus + label::before {
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.25);
+  /* изменено на оранжевый цвет */
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom:focus:not(:checked) + label::before {
+  border-color: orangered;
+  /* изменено на оранжевый цвет */
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom:checked + label::before {
+  border-color: darkorange;
+  /* изменено на оранжевый цвет */
+  background-color: darkorange;
+  /* изменено на оранжевый цвет */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+.logo-ing {
+  user-select: none;
+  background-image: url(../png/2024-03-11_23-15-11.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 80px;
+  width: 150px;
+  height: 60px;
+}
+
+/* для элемента input c type="checkbox" */
+.checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.checkbox > span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.checkbox > span::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid orange;
+  /* изменено на оранжевый цвет */
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+.checkbox > input:not(:disabled):not(:checked) + span:hover::before {
+  border-color: darkorange;
+  /* изменено на оранжевый цвет */
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.checkbox > input:not(:disabled):active + span::before {
+  background-color: darkorange;
+  /* изменено на оранжевый цвет */
+  border-color: darkorange;
+  /* изменено на оранжевый цвет */
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.checkbox > input:focus + span::before {
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.25);
+  /* изменено на оранжевый цвет */
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.checkbox > input:focus:not(:checked) + span::before {
+  border-color: orange;
+  /* изменено на оранжевый цвет */
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.checkbox > input:checked + span::before {
+  border-color: darkorange;
+  /* изменено на оранжевый цвет */
+  background-color: darkorange;
+  /* изменено на оранжевый цвет */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.checkbox > input:disabled + span::before {
+  background-color: #e9ecef;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 4.25em;
+}
+
+.regist {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  width: 380px;
+  height: 550px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 10px 3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 6px 10px 3px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 6px 12px 3px rgba(34, 60, 80, 0.2);
+}
+
+.regist > div {
+  gap: 20px;
+}
+
+#checkboxes {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+#checkboxes input, #checkboxes label {
+  margin: 10px 0;
+}
+
+#onecheck_button > div {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+#docs_date > div {
+  display: flex;
+  flex-direction: row;
+  margin: 16px 0;
+}
+#docs_date > div input {
+  height: 30px;
+  width: 100%;
+  border-radius: 0.5em;
+}
+#docs_date > div label {
+  margin: 5px 0;
+}
+#docs_date > div #datetime {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.button-orange {
+  padding: 5px 0;
+  width: 100%;
+  border: 2px solid orange;
+  font-size: 1.1875em;
+  line-height: 1.474em;
+  border-radius: 0.5em;
+  background-color: orange;
+  transition: 0.2s linear;
+  color: #ffffff;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.button-orange:hover {
+  background-color: #ffffff;
+  transition: 0.2s linear;
+  color: gray;
+}

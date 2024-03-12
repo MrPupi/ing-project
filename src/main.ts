@@ -1,4 +1,4 @@
-import "./dist/style.css";
+import "../style.css";
 
 // Получаем элементы инпутов
 const input1 = document.getElementById("r1") as HTMLInputElement;
