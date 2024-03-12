@@ -258,3 +258,88 @@ body {
   transition: 0.2s linear;
   color: gray;
 }
+
+@media screen and (max-width: 430px) {
+
+  #phone{
+    display: none;
+  }
+  img{
+    display: none;
+  }
+  .logo-ing{
+    /* margin-top: 70px; */
+    left: 75px;
+    position: absolute;
+    scale: 1.1;
+  }
+  .regist{
+    max-width: 360px;
+    right: 10px;
+    position: relative;
+  }
+  #header{
+    max-width: 430px;
+  }
+  div input {
+    left: -10px;
+    scale: 0.8;
+    position: relative;
+  }
+  label{
+    scale: 0.8;
+    left: -10px;
+    position: relative;
+  }
+  .checkbox span{
+    position: relative;
+    left:40px;
+  }
+  #checkboxes{
+    left:2px;
+    position: relative;
+  }
+  span{
+    left: 30px;
+    position: relative;
+  }
+  h1{
+    left: 30px;
+    position: relative;
+  }
+  .button-orange{
+    scale:0.8;
+    position: relative;
+    right:10px
+  }
+  }
+  @media screen and (max-width: 375px) {
+  #header{
+    width: 375px;
+    position: relative;
+  }
+  .regist{
+    width: 310px;
+  }
+  .logo-ing{
+    /* margin-top: 70px; */
+    left: 45px;
+    position: absolute;
+    scale: 1.1;
+  }
+  }
+  @media screen and (max-width: 390px) {
+    #header{
+      width: 390px;
+      position: relative;
+    }
+    .regist{
+      width: 320px;
+    }
+    .logo-ing{
+      /* margin-top: 70px; */
+      left: 45px;
+      position: absolute;
+      scale: 1.1;
+    }
+    }
