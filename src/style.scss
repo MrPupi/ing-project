@@ -1,5 +1,6 @@
 body {
   min-height: 100vh;
+  font-family: "INGMe", arial, sans-serif !important;
   margin: 0;
   padding: 0;
   background: url(../png/fcc1889b9ff054ccc3edbca148a17426.svg) #f0f0f0 no-repeat
@@ -148,9 +149,10 @@ body {
     background-color: #e9ecef;
   }
 
+
 #header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
   width: 100%;
@@ -163,8 +165,8 @@ body {
   padding: 40px;
   margin: 50px auto;
   background-color: #ffffff;
-  width: 400px;
-  height: 580px;
+  width: 380px;
+  height: 550px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 6px 10px 3px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 6px 10px 3px rgba(34, 60, 80, 0.2);
@@ -195,12 +197,12 @@ body {
   flex-direction: column;
   margin: 16px 0 ;
   input {
-    display: flex;
     height: 30px;
     width: 100%;
-    text-align: center;
     border-radius: 0.5em;
-    flex-direction: row-reverse;
+  }
+  label {
+    margin: 5px 0 ;
   }
 }
 
